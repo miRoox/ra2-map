@@ -19,6 +19,7 @@ NumberStartingPoints=8
 
 [ArmorTypes]
 eqdummy=0%
+n_tunnel=0%
 
 [BuildingTypes]
 2000=CAEQTR
@@ -62,7 +63,7 @@ DeathWeapon=Earthquake0WP
 ROF=15
 Anim=RING1
 Range=128
-Damage=1500
+Damage=1000
 Suicide=yes
 Warhead=EarthquakeWH
 Projectile=Invisible
@@ -71,7 +72,7 @@ Projectile=Invisible
 ROF=15
 Anim=RING1
 Range=128
-Damage=600
+Damage=450
 Suicide=yes
 Warhead=EarthquakeWH
 Projectile=InvisibleAll
@@ -109,7 +110,8 @@ Damage=600
 RadLevel=200
 
 [NATUNE]
-Immune=yes
+Armor=n_tunnel
+Passengers=12
 
 [Warheads]
 500=EarthquakeWH
@@ -2093,7 +2095,7 @@ PlayerControl=no
 Wall=yes
 Wood=yes
 Rocker=yes
-Verses=15%,12%,8%,10%,12%,10%,8%,10%,8%,10%,10%
+Verses=100%,50%,20%,20%,30%,20%,30%,40%,20%,100%,100%
 AnimList=INVISO
 InfDeath=1
 ShakeXhi=30
@@ -2102,48 +2104,15 @@ ShakeYhi=50
 ShakeYlo=50
 CellSpread=128
 ProneDamage=10%
-Versus.mort=12%
-Versus.sieg=12%
-Versus.supr=12%
 Conventional=yes
 PercentAtMax=1
-Versus.f_jet=10%
-Versus.trike=10%
 Ripple.Radius=15
-Versus.c_hero=12%
+Versus.yunru=2%
 Versus.cyborg=12%
-Versus.f_dybb=10%
-Versus.f_harb=10%
-Versus.f_hero=10%
-Versus.f_hurr=10%
-Versus.f_rock=10%
-Versus.f_shad=10%
-Versus.f_thor=10%
-Versus.n_bane=12%
-Versus.n_cove=12%
-Versus.s_yhvr=10%
-Sonar.Duration=150
-Versus.c_hero2=12%
 Versus.eqdummy=100%
-Versus.f_cryoc=10%
-Versus.f_diver=10%
-Versus.f_heavy=10%
-Versus.f_light=10%
-Versus.f_quetz=10%
-Versus.f_spawn=10%
-Versus.f_widow=10%
-Versus.gharial=10%
-Versus.n_clair=12%
-Versus.s_trans=10%
+Versus.n_tunnel=100%
 Damage.Deployed=20%
-Versus.f_gotter=10%
-Versus.f_medium=10%
-Versus.f_mothra=10%
-Versus.f_seizer=10%
-Versus.f_shrike=10%
-Versus.n_knight=12%
-Versus.s_seamon=10%
-Versus.s_spin_seat=10%
+Sonar.Duration=150
 CellSpread.MaxAffect=4
 
 [Europeans]
