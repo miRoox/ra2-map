@@ -23,6 +23,12 @@ eqdummy=0%
 [BuildingTypes]
 2000=CAEQTR
 
+[CACOMN]
+HasRadialIndicator=true
+ConcentricRadialIndicator=true
+DetectDisguise=yes
+PsychicDetectionRadius=32
+
 [CAEQTR]
 Cost=0
 Name=Earthquake dummy trigger
