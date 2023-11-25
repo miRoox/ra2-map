@@ -24,6 +24,10 @@ n_tunnel=0%
 [BuildingTypes]
 2000=CAEQTR
 
+[BasicTunnel]
+Passengers=12
+MaxSize=6
+
 [CACOMN]
 HasRadialIndicator=true
 ConcentricRadialIndicator=true
