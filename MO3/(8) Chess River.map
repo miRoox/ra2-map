@@ -65,6 +65,7 @@ Soylent=10000
 Bounty.Value=10000
 Bounty=yes
 Bounty.Display=yes
+PoweredBy=GAPDOX,GASCPF,GAMERC,GASCEA
 RateUp=5
 Stage1=40
 Stage2=80
