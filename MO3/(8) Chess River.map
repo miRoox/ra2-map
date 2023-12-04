@@ -60,6 +60,11 @@ ForceShield.Modifier=0
 IronCurtain.Modifier=0
 
 [STARDUSTB]
+Cost=20000
+Soylent=10000
+Bounty.Value=10000
+Bounty=yes
+Bounty.Display=yes
 RateUp=5
 Stage1=40
 Stage2=80
@@ -173,7 +178,7 @@ RechargeTime=30
 Type=UnitDelivery
 Action=Custom
 SidebarPCX=chroicon.pcx
-Money.Amount=10000
+Money.Amount=50000
 Message.FirerColor=yes
 Message.Launch=NAME:CHRONOACTIVE
 SW.FireIntoShroud=no
