@@ -289,7 +289,7 @@ PercentBuilt=0
 PlayerControl=no
 
 [Basic]
-Name=No name
+Name=Stone Maze (4)
 Percent=0
 GameMode=standard, meatgrind, navalwar, nukewar, airwar, megawealth, duel, cooperative, teamgame
 HomeCell=98
