@@ -17,6 +17,33 @@ Waypoint8=0,0
 NumberStartingPoints=3
 
 
+[General]
+AISlaveMinerNumber=0,0,0
+; soldier that emerges from destroyed unit or building
+AlliedCrew=LUNR
+SovietCrew=LUNR
+ThirdCrew=LUNR
+Technician=LUNR
+Engineer=LUNR
+SoloCrateMoney=10000
+
+[E1]
+AllowedToStartInMultiplayer=no
+
+[E2]
+AllowedToStartInMultiplayer=no
+
+[INIT]
+AllowedToStartInMultiplayer=no
+
+[LUNR]
+TechLevel=1
+Armor=special_2
+Strength=250
+AllowedToStartInMultiplayer=yes
+Owner=Russians,Confederation,Africans,Arabs,YuriCountry,British,French,Germans,Americans,Alliance
+Prerequisite=BARRACKS
+
 [Preview]
 Size=0,0,100,50
 
