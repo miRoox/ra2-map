@@ -34,6 +34,8 @@ SovietDisguise=LUNR ; these are the defaults for the spy if a MakeupKit hasn't b
 ThirdDisguise=LUNR
 ; Prequisite
 PrerequisiteRadar=GAAIRC,NARADR,AMRADR2,NAPSIS
+; Lightning Storm
+WeatherConClouds=WARPAWAY,WARPOUT
 
 [AI]
 BuildRadar=GAAIRC,NARADR,AMRADR2,NAPSIS
