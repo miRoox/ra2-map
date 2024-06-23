@@ -20,29 +20,172 @@ NumberStartingPoints=3
 [General]
 AISlaveMinerNumber=0,0,0
 ; soldier that emerges from destroyed unit or building
+Pilot=ENGINEER
 AlliedCrew=LUNR
 SovietCrew=LUNR
 ThirdCrew=LUNR
 Technician=LUNR
-Engineer=LUNR
+; Engineer=LUNR
+PParatrooper=ENGINEER
 SoloCrateMoney=10000
+;*** Spy stuff ***
+AlliedDisguise=LUNR
+SovietDisguise=LUNR ; these are the defaults for the spy if a MakeupKit hasn't been used
+ThirdDisguise=LUNR
 
 [E1]
+TechLevel=11
 AllowedToStartInMultiplayer=no
 
 [E2]
+TechLevel=11
 AllowedToStartInMultiplayer=no
 
 [INIT]
+TechLevel=11
 AllowedToStartInMultiplayer=no
 
 [LUNR]
 TechLevel=1
-Armor=special_2
-Strength=250
+; Armor=special_2
+; Strength=250
 AllowedToStartInMultiplayer=yes
 Owner=Russians,Confederation,Africans,Arabs,YuriCountry,British,French,Germans,Americans,Alliance
 Prerequisite=BARRACKS
+
+[ADOG]
+TechLevel=11
+
+[DOG]
+TechLevel=11
+
+[BRUTE]
+Cost=600
+Soylent=200
+
+[ENGINEER]
+Image=LUNR
+Cost=600
+Soylent=300
+
+[SENGINEER]
+Image=LUNR
+Cost=600
+Soylent=300
+
+[YENGINEER]
+Image=LUNR
+Cost=600
+Soylent=300
+
+[GGI]
+TechLevel=11
+
+[FLAKT]
+TechLevel=11
+
+[JUMPJET]
+Primary=Lunarlaser
+ElitePrimary=PrismShot
+
+[SHK]
+Cost=800
+Soylent=400
+OccupyWeapon=CoilBolt ; The weapon I use while Occupying.  Defaults to 0 (Primary)
+EliteOccupyWeapon=OPCoilBolt ; The weapon I use while Occupying.  Defaults to 0 (Primary)
+Occupier=yes ; I can Occupy UC buildings
+
+[VIRUS]
+TechLevel=11
+
+[GHOST]
+TechLevel=11
+
+[IVAN]
+TechLevel=11
+
+[SPY]
+Image=LUNR
+
+[SNIPE]
+Image=LUNR
+Cost=1200
+Soylent=600
+Speed=10
+CrashingSound=RocketeerDie
+ImpactLandSound=RocketeerCrash
+Locomotor={92612C46-F71F-11d1-AC9F-006008055BB5}
+PhysicalSize=1
+MovementZone=Fly		; This needs to be None, like aircraft
+ConsideredAircraft=yes
+JumpjetSpeed=30 ;params not defined use defaults (old globals way up top called Jumpjet controls)
+JumpjetClimb=20 ;HY increase climb speed; used to be 10
+JumpjetCrash=25 ; Climb, but down
+JumpJetAccel=10
+JumpJetTurnRate=10
+JumpjetHeight=500
+JumpjetWobbles=.01
+JumpjetDeviation=1
+JumpjetNoWobbles=yes ; the wobbling is in the Hover sequence of the art, instead of being programmer art/ sine wave
+JumpJetTurn=yes ;Use proper turn logic
+SpeedType=Hover
+HoverAttack=yes
+Crashable=yes
+BalloonHover=yes ; ie never land
+MoveSound=RocketeerMoveLoop
+
+[AWP]
+Projectile=InvisibleAll
+IsHouseColor=true
+LaserOuterSpread= 0,0,0
+LaserDuration = 5
+IsLaser=true	; this flag tells the game to use the special laser draw effect
+
+[AWPE]
+Projectile=InvisibleAll
+IsHouseColor=true
+LaserOuterSpread= 0,0,0
+LaserDuration = 5
+IsLaser=true	; this flag tells the game to use the special laser draw effect
+
+[TERROR]
+Image=LUNR
+Cost=300
+Soylent=200
+
+[TerrorBombWH]
+CellSpread=3
+Wood=yes
+Wall=yes
+
+[DESO]
+Cost=800
+Soylent=400
+
+[YURI]
+TechLevel=11
+
+[TANY]
+TechLevel=11
+
+[BORIS]
+TechLevel=11
+
+[YURIPR]
+TechLevel=11
+
+[CLEG]
+Cost=1600
+Soylent=800
+
+[PTROOP]
+TechLevel=11
+
+[CIVAN]
+TechLevel=11
+
+[CCOMMAND]
+TechLevel=11
 
 [BuildingTypes]
 500=CALUNR
