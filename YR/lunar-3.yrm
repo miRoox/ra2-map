@@ -32,6 +32,11 @@ SoloCrateMoney=10000
 AlliedDisguise=LUNR
 SovietDisguise=LUNR ; these are the defaults for the spy if a MakeupKit hasn't been used
 ThirdDisguise=LUNR
+; Prequisite
+PrerequisiteRadar=GAAIRC,NARADR,AMRADR2,NAPSIS
+
+[AI]
+BuildRadar=GAAIRC,NARADR,AMRADR2,NAPSIS
 
 [E1]
 TechLevel=11
@@ -187,7 +192,55 @@ TechLevel=11
 [CCOMMAND]
 TechLevel=11
 
+[AMRADR]
+TechLevel=11
+AIBuildThis=no
+RequiredHouses=
+
+[AMRADR2]
+UIName=Name:GAAIRC
+Name=Allied American Airforce Command Headquarters (Alternative)
+Image=GAAIRC
+BuildCat=Tech
+Prerequisite=GAREFN,GACNST
+Strength=600
+Armor=steel
+Adjacent=2
+TechLevel=3
+Sight=5
+UnitReload=yes
+;UnitRepair=yes;gs this is part of reloading + being an aircraft (Repair code is oogly, only Reload got rewritten for four ports.)
+Helipad=yes
+Owner=British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry
+RequiredHouses=Americans
+AIBasePlanningSide=0 ;gs 0 for Good, 1 for Evil
+Cost=1000
+Points=70
+Power=-50
+Factory=AircraftType
+Capturable=true
+Crewed=yes
+Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
+MaxDebris=4
+ThreatPosed=0	; This value MUST be 0 for all building addons
+DamageParticleSystems=SparkSys,SmallGreySSys,BigGreySmokeSys
+DamageSmokeOffset=75, 270, 140
+AIBuildThis=yes
+NumberOfDocks=4
+HasStupidGuardMode=false
+Radar=yes
+Spyable=yes
+; SuperWeapon=AmericanParaDropSpecial
+ImmuneToPsionics=no ; defaults to yes for buildings, no for others
+
+[ORCA]
+Dock=GAAIRC,AMRADR2
+
+[BEAG]
+Dock=GAAIRC,AMRADR2
+
 [BuildingTypes]
+450=AMRADR2
 500=CALUNR
 
 [Warheads]
@@ -562,6 +615,7 @@ NodeCount=0
 TechLevel=1
 PercentBuilt=0
 PlayerControl=no
+VeteranInfantry=LUNR,JUMPJET
 
 [Arabs]
 IQ=0
