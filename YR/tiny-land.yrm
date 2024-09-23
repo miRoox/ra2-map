@@ -179,6 +179,9 @@ MaxNumberOccupants=0
 [CrateRules]
 CrateMinimum=8
 
+[DNOB]
+Strength=1500
+
 [EiffelBolt]
 ROF=15
 Range=25
@@ -717,6 +720,16 @@ PlayerControl=no
 11=Nod
 12=Neutral
 13=Special
+
+[Infantry]
+0=Neutral,DNOB,256,56,70,1,Guard,128,None,0,-1,0,1,0
+1=Neutral,DNOB,256,64,70,1,Guard,128,None,0,-1,0,1,0
+2=Neutral,DNOB,256,52,66,1,Guard,192,None,0,-1,0,1,0
+3=Neutral,DNOB,256,52,58,1,Guard,192,None,0,-1,0,1,0
+4=Neutral,DNOB,256,55,53,1,Guard,0,None,0,-1,0,1,0
+5=Neutral,DNOB,256,68,66,1,Guard,64,None,0,-1,0,1,0
+6=Neutral,DNOB,256,64,53,2,Guard,0,None,0,-1,0,1,0
+7=Neutral,DNOB,256,68,57,1,Guard,64,None,0,-1,0,1,0
 
 [IsoMapPack5]
 1=Cg4AIAAFPAABADsBAAABAAA7AAIAOwEAAAIAADzIAQUDAAA9AAIAOrQCAjoAAwA9qQE7yQ
